@@ -1,0 +1,17 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>BaseDialog.qml</file>
+        <file>editdialog.qml</file>
+        <file>setdialog.qml</file>
+        <file>Building.qml</file>
+        <file>LineEdit.qml</file>
+        <file>database.js</file>
+        <file>QuestionDialog.qml</file>
+        <file>searchdialog.qml</file>
+        <file>CusMenu.qml</file>
+        <file>tray.png</file>
+        <file>Light.jpg</file>
+    </qresource>
+</RCC>
