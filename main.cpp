@@ -5,6 +5,7 @@
 #include "sqlite.h"
 #include "configure.h"
 #include "parkmodel.h"
+
 int main(int argc, char *argv[])
 {
     QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
@@ -15,10 +16,7 @@ int main(int argc, char *argv[])
     qmlRegisterType<Sqlite>("Sqlite", 1, 0, "Sqlite");
     qmlRegisterType<Configure>("Configure", 1, 0, "Configure");
     qmlRegisterType<ParkModel>("ParkModel", 1, 0, "ParkModel");
-    QQmlApplicationEngine engine;
-    //数据库存储路径
-    //engine.setOfflineStoragePath(QCoreApplication::applicationDirPath());
-    engine.load("qrc:/main.qml");
+    QQmlApplicationEngine engine("qrc:/main.qml");
     if (engine.rootObjects().isEmpty())
         return -1;
     return app.exec();

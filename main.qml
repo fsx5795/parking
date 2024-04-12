@@ -7,6 +7,7 @@ import QtQuick.Window 2.15
 import Qt.labs.platform 1.1 as Pf
 import QtQuick.Controls.Universal 2.15
 import QtGraphicalEffects 1.15
+
 ApplicationWindow {
     id: mainWindow
     width: 800
